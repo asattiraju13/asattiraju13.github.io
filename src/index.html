@@ -5,16 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhinav Sattiraju</title>
   <link rel="icon" type="image/favicon" href="/src/visuals/favicon.png"/>
+  <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
+rel='stylesheet' type='text/css'>
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/css/styles.css">
 </head>
-<body>
-  <div class='flex justify-evenly bg-black text-white'>
-    <div class='nameicon'></div>
-    <div class="">Experience</div>
-    <div class="">Projects</div>
-    <div>Contact</div>
-    <div>Resume</div>
-  </div>
+<body class="bg-black">
+  <nav class= "navbar fixed top-0 left-0 right-0 bg-black flex justify-start align-baseline
+  text-center">
+    <div class="navbar-item navbar:basis-3/5 name">
+      <a href="#">
+        <img src="/src/visuals/name_icon.png" alt="name_icon" class="h-icon name_icon">
+      </a>
+    </div>
+    <div class="navbar-item justify-between navbar_max:hidden">
+      <a href="#experience">
+        <span class="text-main-purple hover:text-main-blue">Experience</span>
+      </a>
+    </div>
+    <div class="navbar-item justify-between navbar_max:hidden">
+      <a href="#projects">
+        <span class="text-main-purple hover:text-main-blue">Projects</span>
+      </a>
+    </div>
+    <div class="navbar-item justify-between navbar_max:hidden">
+      <a href="#projects">
+        <span class="text-main-purple hover:text-main-blue">Skills</span>
+      </a>
+    </div>
+    <div class="navbar-item justify-between navbar_max:hidden">
+      <a href="#contact">
+        <span class="text-main-purple hover:text-main-blue">Contact</span>
+      </a>
+    </div>
+    <div class="navbar-item justify-between navbar_max:hidden">
+      <a href="/src/pages/resume.pdf" target="_blank">
+        <span class="text-main-purple hover:text-main-blue" >Resume</span>
+      </a>
+    </div>
+  </nav>
 </body>
 </html>

@@ -423,12 +423,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .flex {
   display: flex;
 }
 
-.justify-evenly {
-  justify-content: space-evenly;
+.h-icon {
+  height: 4vw;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .bg-black {
@@ -436,19 +460,58 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.text-white {
+.text-center {
+  text-align: center;
+}
+
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.text-main-purple {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(153 85 255 / var(--tw-text-opacity));
 }
 
-.hei {
-  height: 100px;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat';
 }
 
-.nameicon {
-  background-image: url('/src/visuals/name_icon.png');
-  width: 50%;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  margin: 1em 0;
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-item {
+  margin: auto 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.name {
+  margin: 1rem;
+}
+
+@media (max-width: 900px) {
+  .name_icon {
+    height: 36px;
+  }
+}
+
+.hover\:text-main-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(42 127 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 900px) {
+  .navbar\:basis-3\/5 {
+    flex-basis: 60%;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar_max\:hidden {
+    display: none;
+  }
 }
