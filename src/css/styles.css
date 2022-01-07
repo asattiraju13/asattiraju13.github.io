@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.nameicon {
+    background-image: url('/src/visuals/name_icon.png');
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin: 1em 0; 
+}
