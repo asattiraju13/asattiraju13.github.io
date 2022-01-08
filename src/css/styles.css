@@ -11,7 +11,7 @@
 html {
     scroll-behavior: smooth;
     height: 2000px;
-    background-color: black;
+    background: linear-gradient(#2A7FFF, #9955ff);
 }
 
 .navbar {
@@ -30,6 +30,17 @@ html {
 
 .arrow-button:hover {
     box-shadow: 0px 0px 5px 2px white;
+    transition: 0.2s;
+}
+
+
+@media (max-width: 779px) {
+    .off {
+        display: none;
+    }
+    .on {
+        display: block;
+    }
 }
 
 ::-webkit-scrollbar {

@@ -11,36 +11,45 @@ rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body class="bg-slate-50">
-  <nav class= "navbar fixed top-0 left-0 right-0 bg-black flex justify-start align-baseline
+  <nav class= "navbar fixed top-0 left-0 right-0 bg-black flex navbar_max:flex-wrap justify-start
   text-center font-medium">
+
     <div class="navbar-item navbar:basis-3/5 name">
       <a href="#">
         <img src="/src/visuals/name_icon.png" alt="name_icon" class="h-icon name_icon min-h-icon">
       </a>
     </div>
-    <div class="navbar-item justify-between navbar_max:hidden">
-      <a href="#experience">
-        <span class="text-main-purple hover:text-main-blue">Experience</span>
-      </a>
+
+    <button class="navbar:hidden w-8 m-auto mt-8 mr-8 hover:w-10 origin-center duration-200 self-start menubutton">
+      <img src="/src/visuals/menu_icon.png" alt="menu icon">
+    </button>
+
+    <div class='inline-flex navbar_max:flex-col navbar_max:w-screen navbar_max:self-end navbar_max:m-4 dropdown off'>
+      <div class="navbar-item text-center justify-between">
+        <a href="#experience">
+          <span class="text-main-purple hover:text-main-blue">Experience</span>
+        </a>
+      </div>
+      <div class="navbar-item justify-between">
+        <a href="#projects">
+          <span class="text-main-purple hover:text-main-blue">Projects</span>
+        </a>
+      </div>
+      <div class="navbar-item justify-between">
+        <a href="#contact">
+          <span class="text-main-purple hover:text-main-blue">Contact</span>
+        </a>
+      </div>
+      <div class="navbar-item justify-between">
+        <a href="/src/pages/resume.pdf" target="_blank">
+          <span class="text-main-purple hover:text-main-blue" >Resume</span>
+        </a>
+      </div>
     </div>
-    <div class="navbar-item justify-between navbar_max:hidden">
-      <a href="#projects">
-        <span class="text-main-purple hover:text-main-blue">Projects</span>
-      </a>
-    </div>
-    <div class="navbar-item justify-between navbar_max:hidden">
-      <a href="#contact">
-        <span class="text-main-purple hover:text-main-blue">Contact</span>
-      </a>
-    </div>
-    <div class="navbar-item justify-between navbar_max:hidden">
-      <a href="/src/pages/resume.pdf" target="_blank">
-        <span class="text-main-purple hover:text-main-blue" >Resume</span>
-      </a>
-    </div>
+
   </nav>
 
-  <button class='fixed bottom-0 right-0 h-10 w-10 bg-gradient-to-r from-main-blue to-main-purple m-8 arrow-button' onclick="window.location.href='#'">
+  <button class='fixed bottom-0 right-0 h-10 w-10 bg-gradient-to-r from-main-blue to-main-purple m-8 border-black border arrow-button' onclick="window.location.href='#'">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
     </svg>

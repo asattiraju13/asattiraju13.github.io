@@ -10,4 +10,13 @@ window.addEventListener('scroll', function() {
     }
 
     prev = scroll;
-})
+});
+
+var button = document.querySelector('.menubutton')
+
+button.addEventListener('click', function() {
+    var dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('off');
+    dropdown.classList.toggle('on');
+});
+

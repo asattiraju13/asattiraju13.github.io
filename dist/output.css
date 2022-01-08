@@ -423,6 +423,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+*, ::before, ::after {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .fixed {
   position: fixed;
 }
@@ -443,12 +448,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .m-8 {
   margin: 2rem;
 }
 
-.m-auto {
-  margin: auto;
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
 }
 
 .block {
@@ -457,6 +470,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .h-icon {
@@ -475,6 +492,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 36px;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -483,12 +504,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
+.origin-center {
+  transform-origin: center;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-slate-50 {
@@ -518,10 +556,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.align-baseline {
-  vertical-align: baseline;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -529,6 +563,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-main-purple {
   --tw-text-opacity: 1;
   color: rgb(153 85 255 / var(--tw-text-opacity));
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 * {
@@ -540,7 +578,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 html {
   scroll-behavior: smooth;
   height: 2000px;
-  background-color: black;
+  background: linear-gradient(#2A7FFF, #9955ff);
 }
 
 .navbar {
@@ -559,6 +597,17 @@ html {
 
 .arrow-button:hover {
   box-shadow: 0px 0px 5px 2px white;
+  transition: 0.2s;
+}
+
+@media (max-width: 779px) {
+  .off {
+    display: none;
+  }
+
+  .on {
+    display: block;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -574,19 +623,43 @@ html {
   background: linear-gradient(to bottom, rgba(42, 127, 255,0.4), rgba(153, 85, 255,0.4));
 }
 
+.hover\:w-10:hover {
+  width: 2.5rem;
+}
+
 .hover\:text-main-blue:hover {
   --tw-text-opacity: 1;
   color: rgb(42 127 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 900px) {
+@media (min-width: 780px) {
+  .navbar\:hidden {
+    display: none;
+  }
+
   .navbar\:basis-3\/5 {
     flex-basis: 60%;
   }
 }
 
-@media (max-width: 900px) {
-  .navbar_max\:hidden {
-    display: none;
+@media (max-width: 779px) {
+  .navbar_max\:m-4 {
+    margin: 1rem;
+  }
+
+  .navbar_max\:w-screen {
+    width: 100vw;
+  }
+
+  .navbar_max\:flex-col {
+    flex-direction: column;
+  }
+
+  .navbar_max\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .navbar_max\:self-end {
+    align-self: flex-end;
   }
 }

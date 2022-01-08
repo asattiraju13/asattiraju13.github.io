@@ -6,8 +6,8 @@ module.exports = {
         'eighth': '12.5%'
       },
       screens: {
-        'navbar':{'min': '900px'},
-        'navbar_max':{'max': '900px'},
+        'navbar':{'min': '780px'},
+        'navbar_max':{'max': '779px'},
         'xl_max': {'max': '1279px'},
         // => @media (max-width: 1279px) { ... }
   
