@@ -10,12 +10,12 @@ rel='stylesheet' type='text/css'>
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/css/styles.css">
 </head>
-<body class="bg-black">
+<body class="bg-slate-50">
   <nav class= "navbar fixed top-0 left-0 right-0 bg-black flex justify-start align-baseline
-  text-center">
+  text-center font-medium">
     <div class="navbar-item navbar:basis-3/5 name">
       <a href="#">
-        <img src="/src/visuals/name_icon.png" alt="name_icon" class="h-icon name_icon">
+        <img src="/src/visuals/name_icon.png" alt="name_icon" class="h-icon name_icon min-h-icon">
       </a>
     </div>
     <div class="navbar-item justify-between navbar_max:hidden">
@@ -29,11 +29,6 @@ rel='stylesheet' type='text/css'>
       </a>
     </div>
     <div class="navbar-item justify-between navbar_max:hidden">
-      <a href="#projects">
-        <span class="text-main-purple hover:text-main-blue">Skills</span>
-      </a>
-    </div>
-    <div class="navbar-item justify-between navbar_max:hidden">
       <a href="#contact">
         <span class="text-main-purple hover:text-main-blue">Contact</span>
       </a>
@@ -44,5 +39,12 @@ rel='stylesheet' type='text/css'>
       </a>
     </div>
   </nav>
+
+  <button class='fixed bottom-0 right-0 h-10 w-10 bg-gradient-to-r from-main-blue to-main-purple m-8 arrow-button' onclick="window.location.href='#'">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button>
+  <script src="/src/js/script.js"></script>
 </body>
 </html>

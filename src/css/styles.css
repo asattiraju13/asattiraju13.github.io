@@ -10,6 +10,12 @@
 
 html {
     scroll-behavior: smooth;
+    height: 2000px;
+    background-color: black;
+}
+
+.navbar {
+    transition: top 0.4s;
 }
 
 .navbar-item {
@@ -22,8 +28,22 @@ html {
     margin: 1rem;
 }
 
-@media (max-width: 900px) {
-    .name_icon {
-        height: 36px;
-    }
+.arrow-button:hover {
+    box-shadow: 0px 0px 5px 2px white;
+}
+
+::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+::-webkit-scrollbar {
+    background-color: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#2A7FFF, #9955ff);
+} 
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, rgba(42, 127, 255,0.4), rgba(153, 85, 255,0.4));
 }
