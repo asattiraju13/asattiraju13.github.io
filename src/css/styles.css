@@ -28,11 +28,30 @@ html {
     margin: 1rem;
 }
 
+.arrow-button.hovered {
+    animation: shadow-transition-out 0.2s;
+}
 .arrow-button:hover {
-    box-shadow: 0px 0px 5px 2px white;
-    transition: 0.2s;
+    animation: shadow-transition-in 0.2s forwards;
 }
 
+@keyframes shadow-transition-out {
+    from {
+        box-shadow: 0px 0px 5px 2px white;
+    }
+    to {
+        box-shadow: 0px 0px 0px 0px white;
+    }
+}
+
+@keyframes shadow-transition-in {
+    from {
+        box-shadow: 0px 0px 0px 0px white;
+    }
+    to {
+        box-shadow: 0px 0px 5px 2px white;
+    }
+}
 
 @media (max-width: 779px) {
     .off {

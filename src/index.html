@@ -24,24 +24,24 @@ rel='stylesheet' type='text/css'>
       <img src="/src/visuals/menu_icon.png" alt="menu icon">
     </button>
 
-    <div class='inline-flex navbar_max:flex-col navbar_max:w-screen navbar_max:self-end navbar_max:m-4 dropdown off'>
+    <div class='inline-flex navbar_max:flex-col navbar_max:w-screen navbar_max:m-4 dropdown off'>
       <div class="navbar-item text-center justify-between">
-        <a href="#experience">
+        <a href="#experience" tabindex="0" class="link">
           <span class="text-main-purple hover:text-main-blue">Experience</span>
         </a>
       </div>
       <div class="navbar-item justify-between">
-        <a href="#projects">
+        <a href="#projects" tabindex="0" class="link">
           <span class="text-main-purple hover:text-main-blue">Projects</span>
         </a>
       </div>
       <div class="navbar-item justify-between">
-        <a href="#contact">
+        <a href="#contact" tabindex="0" class="link">
           <span class="text-main-purple hover:text-main-blue">Contact</span>
         </a>
       </div>
       <div class="navbar-item justify-between">
-        <a href="/src/pages/resume.pdf" target="_blank">
+        <a href="/src/pages/resume.pdf" target="_blank" tabindex="0" class="link resume">
           <span class="text-main-purple hover:text-main-blue" >Resume</span>
         </a>
       </div>
@@ -50,9 +50,9 @@ rel='stylesheet' type='text/css'>
   </nav>
 
   <button class='fixed bottom-0 right-0 h-10 w-10 bg-gradient-to-r from-main-blue to-main-purple m-8 border-black border arrow-button' onclick="window.location.href='#'">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-    </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+      </svg>
   </button>
   <script src="/src/js/script.js"></script>
 </body>
