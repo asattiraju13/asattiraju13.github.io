@@ -19,31 +19,29 @@ function toggleDropdown(event) {
     var dropdown = document.querySelector('.dropdown');
     
     dropdown.classList.toggle('off');
-    //animations
     dropdown.classList.toggle('on');
-    
-    if (event.relatedTarget) {
-        if (event.relatedTarget.classList.contains('link')) {
-            location = event.relatedTarget.getAttribute('href');
-            if (event.relatedTarget.classList.contains('resume')) {
 
-            } else {
-                window.open(location,"_blank");
-            }
-            console.log(event.relatedTarget)
-        }
+    var links = document.getElementsByClassName('link')
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+            dropdown.classList.remove('on');
+            dropdown.classList.add('off');
+        })
     }
 }
 
-var button = document.querySelector('.menubutton')
+var button = document.querySelector('.menubutton');
 
 button.addEventListener('click',toggleDropdown);
-button.addEventListener('blur', toggleDropdown);
 
-document.addEventListener('scroll', function() {
+function hideDropdown() {
     var dropdown = document.querySelector('.dropdown');
+    console.log(dropdown.classList);
     dropdown.classList.remove('on');
     dropdown.classList.add('off');
-});
+}
+
+button.addEventListener('blur', hideDropdown);
+document.addEventListener('scroll', hideDropdown);
 
 
