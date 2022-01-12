@@ -462,8 +462,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
-.m-8 {
-  margin: 2rem;
+.m-12 {
+  margin: 3rem;
 }
 
 .mt-8 {
@@ -516,10 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .origin-center {
   transform-origin: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-between {
@@ -642,16 +638,16 @@ table {
 
 /* My own styling */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Montserrat';
-}
-
 html {
   scroll-behavior: smooth;
   height: 2000px;
   background: linear-gradient(#2A7FFF, #9955ff);
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -660,8 +656,8 @@ html {
 
 .navbar-item {
   margin: auto 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.05rem;
 }
 
 .name {
@@ -718,13 +714,17 @@ html {
   }
 }
 
-@media (max-width: 779px) {
+@media (max-width: 949px) {
   .off {
     display: none;
   }
 
   .on {
     display: block;
+  }
+
+  .navbar-item {
+    padding: 0.5rem 1rem;
   }
 }
 
@@ -734,7 +734,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#2A7FFF, #9955ff);
+  background: linear-gradient(#616770, #9955ff);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -750,7 +750,7 @@ html {
   color: rgb(42 127 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 780px) {
+@media (min-width: 950px) {
   .navbar\:hidden {
     display: none;
   }
@@ -760,9 +760,13 @@ html {
   }
 }
 
-@media (max-width: 779px) {
+@media (max-width: 949px) {
   .navbar_max\:m-4 {
     margin: 1rem;
+  }
+
+  .navbar_max\:m-8 {
+    margin: 2rem;
   }
 
   .navbar_max\:w-screen {

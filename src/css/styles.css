@@ -51,19 +51,18 @@ table {
 	border-spacing: 0;
 }
 
-
-
 /* My own styling */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Montserrat';
-}
 
 html {
     scroll-behavior: smooth;
     height: 2000px;
     background: linear-gradient(#2A7FFF, #9955ff);
+}
+
+body {
+    font-family: "Montserrat";
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -72,8 +71,8 @@ html {
 
 .navbar-item {
     margin: auto 1rem;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.05rem;
 }
 
 .name {
@@ -105,12 +104,16 @@ html {
     }
 }
 
-@media (max-width: 779px) {
+@media (max-width: 949px) {
     .off {
         display: none;
     }
     .on {
         display: block;
+    }
+
+    .navbar-item {
+        padding: 0.5rem 1rem;
     }
 }
 
@@ -123,7 +126,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#2A7FFF, #9955ff);
+    background: linear-gradient(#616770, #9955ff);
 } 
 
 ::-webkit-scrollbar-thumb:hover {
