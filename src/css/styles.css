@@ -56,7 +56,6 @@ table {
 html {
     scroll-behavior: smooth;
     height: 2000px;
-    background: linear-gradient(#2A7FFF, #9955ff);
 }
 
 body {
@@ -126,7 +125,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#616770, #9955ff);
+    background: linear-gradient(#2A7FFF, #9955ff);
 } 
 
 ::-webkit-scrollbar-thumb:hover {

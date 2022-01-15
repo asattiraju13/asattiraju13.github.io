@@ -3,7 +3,7 @@ var navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', function() {
     var scroll = window.pageYOffset || this.document.documentElement.scrollTop;
-    if (scroll > prev) {
+    if (scroll > prev && window.pageYOffset > 0) {
         navbar.style.top = '-100px'
     } else {
         navbar.style.top = '0px'

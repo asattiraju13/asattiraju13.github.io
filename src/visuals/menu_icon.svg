@@ -24,13 +24,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.0358089"
-     inkscape:cx="433.96034"
-     inkscape:cy="195.01666"
+     inkscape:zoom="8.120224"
+     inkscape:cx="312.24508"
+     inkscape:cy="228.50355"
      inkscape:window-width="1440"
-     inkscape:window-height="900"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-height="789"
+     inkscape:window-x="232"
+     inkscape:window-y="636"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -128,9 +128,9 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:url(#linearGradient1346);stroke:#000000;stroke-width:0;fill-opacity:1"
+       style="fill:url(#linearGradient1346);fill-opacity:1;stroke:#000000;stroke-width:0"
        id="rect846"
-       width="9.999999"
+       width="37.794998"
        height="1.249999"
        x="75"
        y="60"
@@ -139,9 +139,9 @@
        inkscape:export-ydpi="250"
        clip-path="url(#clipPath1046)" />
     <rect
-       style="fill:url(#linearGradient1328);stroke:#000000;stroke-width:0;fill-opacity:1"
+       style="fill:url(#linearGradient1328);fill-opacity:1;stroke:#000000;stroke-width:0"
        id="rect846-6"
-       width="9.999999"
+       width="37.794998"
        height="1.2499989"
        x="75"
        y="63"
@@ -150,9 +150,9 @@
        inkscape:export-ydpi="250"
        clip-path="url(#clipPath1042)" />
     <rect
-       style="fill:url(#linearGradient1330);stroke:#000000;stroke-width:0;fill-opacity:1"
+       style="fill:url(#linearGradient1330);fill-opacity:1;stroke:#000000;stroke-width:0"
        id="rect846-5"
-       width="9.999999"
+       width="37.794998"
        height="1.2499992"
        x="75"
        y="66"

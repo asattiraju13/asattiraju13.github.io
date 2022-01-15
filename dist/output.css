@@ -535,9 +535,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-slate-50 {
+.bg-main-purple {
   --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  background-color: rgb(153 85 255 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -641,7 +641,6 @@ table {
 html {
   scroll-behavior: smooth;
   height: 2000px;
-  background: linear-gradient(#2A7FFF, #9955ff);
 }
 
 body {
@@ -734,7 +733,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#616770, #9955ff);
+  background: linear-gradient(#2A7FFF, #9955ff);
 }
 
 ::-webkit-scrollbar-thumb:hover {
