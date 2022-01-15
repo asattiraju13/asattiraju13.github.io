@@ -31,7 +31,6 @@ function toggleDropdown(event) {
 }
 
 var button = document.querySelector('.menubutton');
-
 button.addEventListener('click',toggleDropdown);
 
 function hideDropdown() {
@@ -41,7 +40,7 @@ function hideDropdown() {
     dropdown.classList.add('off');
 }
 
-button.addEventListener('blur', hideDropdown);
+//button.addEventListener('blur', hideDropdown);
 document.addEventListener('scroll', hideDropdown);
 
 
