@@ -13,6 +13,8 @@ window.addEventListener('scroll', function() {
 
 var dropdown = document.querySelector('.dropdown');
 var button = document.querySelector('.menubutton');
+var menu_icon = document.querySelector('.menuicon');
+var x_icon = document.querySelector('.xicon');
 
 window.addEventListener('load', function() {
     dropdown.classList.add('load_animation');
@@ -33,12 +35,21 @@ var navbarScroll = new SmoothScroll('.navbar a[href*="#"]', {
 function toggleDropdown(event) {
     dropdown.classList.toggle('off');
     dropdown.classList.toggle('on');
+    if (dropdown.classList.contains('on')) {
+        button.classList.add('fadein');
+        button.classList.remove('fadeout');
+    } else {
+        button.classList.remove('fadein');
+        button.classList.add('fadeout');
+    }
 
     var links = document.getElementsByClassName('link')
     for (let i = 0; i < links.length; i++) {
         links[i].addEventListener('click', function() {
             dropdown.classList.remove('on');
             dropdown.classList.add('off');
+            button.classList.remove('fadein');
+            button.classList.add('fadeout');
         })
     }
 
@@ -51,6 +62,8 @@ function toggleDropdown(event) {
             if (!isClickInsideDropdown && !isClickInsideButton ) {
                 dropdown.classList.remove('on');
                 dropdown.classList.add('off');
+                button.classList.remove('fadein');
+                button.classList.add('fadeout');
             }
         });
     }
@@ -61,6 +74,8 @@ button.addEventListener('click',toggleDropdown);
 function hideDropdown() {
     dropdown.classList.remove('on');
     dropdown.classList.add('off');
+    button.classList.remove('fadein');
+    button.classList.add('fadeout');
 }
 
 document.addEventListener('scroll', hideDropdown);

@@ -426,20 +426,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
-  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
-  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
-  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
-  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
-  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
-  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
-  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
-  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .fixed {
   position: fixed;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .relative {
@@ -567,9 +561,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(153 85 255 / var(--tw-text-opacity));
 }
 
-.blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-filter);
+.opacity-0 {
+  opacity: 0;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -654,11 +647,6 @@ body {
   margin: 1rem;
 }
 
-.load_animation {
-  -webkit-animation: visibility 1.5s forwards;
-          animation: visibility 1.5s forwards;
-}
-
 /* .menubutton.hovered {
     animation: shadow-transition-out 0.2s;
 }
@@ -693,6 +681,71 @@ body {
         box-shadow: 0px 0px 5px 2px white;
     }
 } */
+
+.fadein > .xicon {
+  -webkit-animation: fade-in 0.75s forwards;
+          animation: fade-in 0.75s forwards;
+}
+
+.fadein > .menuicon {
+  -webkit-animation: fade-out 0.75s forwards;
+          animation: fade-out 0.75s forwards;
+}
+
+.fadeout > .xicon {
+  -webkit-animation: fade-out 0.75s forwards;
+          animation: fade-out 0.75s forwards;
+}
+
+.fadeout > .menuicon {
+  -webkit-animation: fade-in 0.75s forwards;
+          animation: fade-in 0.75s forwards
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.load_animation {
+  -webkit-animation: visibility 1.5s forwards;
+          animation: visibility 1.5s forwards;
+}
 
 @media (max-width: 949px) {
   .off {

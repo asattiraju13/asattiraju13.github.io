@@ -20,8 +20,9 @@ rel='stylesheet' type='text/css'>
       </a>
     </div>
 
-    <button class="navbar:hidden w-8 m-auto mt-8 mr-8 menubutton hover:animate-pulse">
-      <img src="/src/visuals/menu_icon.png" alt="menu icon">
+    <button class="navbar:hidden w-8 m-auto mt-8 mr-8 menubutton hover:animate-pulse relative">
+      <img src="/src/visuals/menu_icon.png" alt="menu icon" class="menuicon relative opacity-1">
+      <img src="/src/visuals/x_icon.png" alt="x_icon" class="xicon absolute left-0 top-0 opacity-0">
     </button>
 
     <div class='inline-flex navbar_max:flex-col navbar_max:w-screen navbar_max:m-4 dropdown off relative'>
@@ -42,7 +43,7 @@ rel='stylesheet' type='text/css'>
       </div>
       <div class="navbar-item justify-between">
         <a href="/src/pages/resume.pdf" target="_blank" tabindex="0" class="link resume">
-          <span class="text-main-purple hover:text-main-blue" >Resume</span>
+          <span class="text-main-purple hover:text-main-blue">Resume</span>
         </a>
       </div>
     </div>
