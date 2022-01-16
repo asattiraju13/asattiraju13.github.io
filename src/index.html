@@ -10,7 +10,7 @@
   <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
 rel='stylesheet' type='text/css'>
 </head>
-<body class="bg-black">
+<body class="bg-red-800">
   <nav class= "navbar fixed top-0 left-0 right-0 bg-black flex navbar_max:flex-wrap 
   text-center font-medium">
 
@@ -20,12 +20,12 @@ rel='stylesheet' type='text/css'>
       </a>
     </div>
 
-    <button class="navbar:hidden w-8 m-auto mt-8 mr-8 hover:w-10 origin-center duration-200 self-start menubutton">
+    <button class="navbar:hidden w-8 m-auto mt-8 mr-8 menubutton hover:animate-pulse">
       <img src="/src/visuals/menu_icon.png" alt="menu icon">
     </button>
 
-    <div class='inline-flex navbar_max:flex-col navbar_max:w-screen navbar_max:m-4 dropdown off'>
-      <div class="navbar-item text-center justify-between">
+    <div class='inline-flex navbar_max:flex-col navbar_max:w-screen navbar_max:m-4 dropdown off relative'>
+      <div class="navbar-item justify-between ">
         <a href="#experience" tabindex="0" class="link">
           <span class="text-main-purple hover:text-main-blue">Experience</span>
         </a>
@@ -49,11 +49,12 @@ rel='stylesheet' type='text/css'>
 
   </nav>
 
-  <button class='fixed bottom-0 right-0 h-10 w-10 bg-gradient-to-r from-main-blue to-main-purple m-12 navbar_max:m-8 border-black border arrow-button' onclick="window.location.href='#'">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-      </svg>
-  </button>
+  <!-- <button class='fixed bottom-0 right-0 h-10 w-10 bg-gradient-to-r from-main-blue to-main-purple m-12 navbar_max:m-8 border-black border arrow-button hover:animate-pulse' onclick="window.location.href='#'">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 block m-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </button> -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="/src/js/script.js"></script>
 </body>
 </html>

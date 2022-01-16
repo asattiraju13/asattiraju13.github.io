@@ -5,19 +5,32 @@ window.addEventListener('scroll', function() {
     var scroll = window.pageYOffset || this.document.documentElement.scrollTop;
     if (scroll > prev && window.pageYOffset > 0) {
         navbar.style.top = '-100px'
-    } else {
+    } else if (scroll <= prev) {
         navbar.style.top = '0px'
     }
     prev = scroll;
 });
 
-document.querySelector('.arrow-button').addEventListener('mouseout', function() {
-    document.querySelector('.arrow-button').classList.add('hovered')
+var dropdown = document.querySelector('.dropdown');
+var button = document.querySelector('.menubutton');
+
+window.addEventListener('load', function() {
+    dropdown.classList.add('load_animation');
 })
 
+var navbarScroll = new SmoothScroll('.navbar a[href*="#"]', {
+    speed: 400
+});
+
+// document.querySelector('.arrow-button').addEventListener('mouseout', function() {
+//     document.querySelector('.arrow-button').classList.add('hovered')
+// })
+
+// document.querySelector('.menubutton').addEventListener('mouseout', function() {
+//     document.querySelector('.menubutton').classList.add('hovered')
+// })
+
 function toggleDropdown(event) {
-    var dropdown = document.querySelector('.dropdown');
-    
     dropdown.classList.toggle('off');
     dropdown.classList.toggle('on');
 
@@ -28,19 +41,28 @@ function toggleDropdown(event) {
             dropdown.classList.add('off');
         })
     }
+
+    if (dropdown.classList.contains('on')) {
+        document.addEventListener('click', function(event) {
+            console.log('event');
+            var isClickInsideDropdown = dropdown.contains(event.target);
+            var isClickInsideButton = button.contains(event.target);
+    
+            if (!isClickInsideDropdown && !isClickInsideButton ) {
+                dropdown.classList.remove('on');
+                dropdown.classList.add('off');
+            }
+        });
+    }
 }
 
-var button = document.querySelector('.menubutton');
 button.addEventListener('click',toggleDropdown);
 
 function hideDropdown() {
-    var dropdown = document.querySelector('.dropdown');
-    console.log(dropdown.classList);
     dropdown.classList.remove('on');
     dropdown.classList.add('off');
 }
 
-//button.addEventListener('blur', hideDropdown);
 document.addEventListener('scroll', hideDropdown);
 
 

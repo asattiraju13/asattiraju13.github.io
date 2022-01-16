@@ -442,6 +442,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -514,16 +518,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
-.origin-center {
-  transform-origin: center;
-}
-
 .justify-between {
   justify-content: space-between;
-}
-
-.self-start {
-  align-self: flex-start;
 }
 
 .border {
@@ -535,9 +531,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-main-purple {
+.bg-red-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(153 85 255 / var(--tw-bg-opacity));
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -574,10 +570,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-filter);
-}
-
-.duration-200 {
-  transition-duration: 200ms;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -639,8 +631,7 @@ table {
 /* My own styling */
 
 html {
-  scroll-behavior: smooth;
-  height: 2000px;
+  height: 2500px;
 }
 
 body {
@@ -663,55 +654,45 @@ body {
   margin: 1rem;
 }
 
+.load_animation {
+  -webkit-animation: visibility 1.5s forwards;
+          animation: visibility 1.5s forwards;
+}
+
+/* .menubutton.hovered {
+    animation: shadow-transition-out 0.2s;
+}
+
+.menubutton:hover {
+    animation: shadow-transition-in 0.2s forwards;
+} */
+
+/* 
 .arrow-button.hovered {
-  -webkit-animation: shadow-transition-out 0.2s;
-          animation: shadow-transition-out 0.2s;
+    animation: shadow-transition-out 0.2s;
 }
-
 .arrow-button:hover {
-  -webkit-animation: shadow-transition-in 0.2s forwards;
-          animation: shadow-transition-in 0.2s forwards;
-}
+    animation: shadow-transition-in 0.2s forwards;
+} */
 
-@-webkit-keyframes shadow-transition-out {
-  from {
-    box-shadow: 0px 0px 5px 2px white;
-  }
-
-  to {
-    box-shadow: 0px 0px 0px 0px white;
-  }
-}
-
+/* 
 @keyframes shadow-transition-out {
-  from {
-    box-shadow: 0px 0px 5px 2px white;
-  }
-
-  to {
-    box-shadow: 0px 0px 0px 0px white;
-  }
-}
-
-@-webkit-keyframes shadow-transition-in {
-  from {
-    box-shadow: 0px 0px 0px 0px white;
-  }
-
-  to {
-    box-shadow: 0px 0px 5px 2px white;
-  }
+    from {
+        box-shadow: 0px 0px 5px 2px white;
+    }
+    to {
+        box-shadow: 0px 0px 0px 0px white;
+    }
 }
 
 @keyframes shadow-transition-in {
-  from {
-    box-shadow: 0px 0px 0px 0px white;
-  }
-
-  to {
-    box-shadow: 0px 0px 5px 2px white;
-  }
-}
+    from {
+        box-shadow: 0px 0px 0px 0px white;
+    }
+    to {
+        box-shadow: 0px 0px 5px 2px white;
+    }
+} */
 
 @media (max-width: 949px) {
   .off {
@@ -720,10 +701,33 @@ body {
 
   .on {
     display: block;
+    -webkit-animation: visibility 1.5s forwards;
+            animation: visibility 1.5s forwards;
   }
 
   .navbar-item {
     padding: 0.5rem 1rem;
+    margin: 1rem;
+  }
+}
+
+@-webkit-keyframes visibility {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes visibility {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
 
@@ -740,8 +744,21 @@ body {
   background: linear-gradient(to bottom, rgba(42, 127, 255,0.4), rgba(153, 85, 255,0.4));
 }
 
-.hover\:w-10:hover {
-  width: 2.5rem;
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.hover\:animate-pulse:hover {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .hover\:text-main-blue:hover {
