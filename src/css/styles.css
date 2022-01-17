@@ -124,7 +124,7 @@ body {
 }
 
 .fadeout > .menuicon {
-    animation: fade-in 0.75s forwards
+    animation: fade-in 0.75s forwards;
 }
 
 @keyframes fade-in {

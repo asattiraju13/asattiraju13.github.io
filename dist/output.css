@@ -512,6 +512,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
+.resize {
+  resize: both;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -699,7 +703,7 @@ body {
 
 .fadeout > .menuicon {
   -webkit-animation: fade-in 0.75s forwards;
-          animation: fade-in 0.75s forwards
+          animation: fade-in 0.75s forwards;
 }
 
 @-webkit-keyframes fade-in {

@@ -55,7 +55,6 @@ function toggleDropdown(event) {
 
     if (dropdown.classList.contains('on')) {
         document.addEventListener('click', function(event) {
-            console.log('event');
             var isClickInsideDropdown = dropdown.contains(event.target);
             var isClickInsideButton = button.contains(event.target);
     
@@ -68,6 +67,13 @@ function toggleDropdown(event) {
         });
     }
 }
+
+window.addEventListener('resize', function() {
+    if (this.window.innerWidth > 949) {
+        button.classList.remove('fadein');
+        button.classList.remove('fadeout');
+    }
+})
 
 button.addEventListener('click',toggleDropdown);
 
