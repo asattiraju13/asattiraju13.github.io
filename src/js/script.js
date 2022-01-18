@@ -1,3 +1,5 @@
+
+// Navbar positioning based on scroll
 var prev;
 var navbar = document.querySelector('.navbar');
 
@@ -11,6 +13,7 @@ window.addEventListener('scroll', function() {
     prev = scroll;
 });
 
+// Dropdown and button mechanics
 var dropdown = document.querySelector('.dropdown');
 var button = document.querySelector('.menubutton');
 var menu_icon = document.querySelector('.menuicon');
@@ -18,6 +21,24 @@ var x_icon = document.querySelector('.xicon');
 
 window.addEventListener('load', function() {
     dropdown.classList.add('load_animation');
+    if (this.window.innerWidth > 949) {
+        setTimeout(() => {
+            document.querySelector('.profile-pic').classList.add('load_profile');
+        },1000)
+        setTimeout(() => {
+            document.querySelector('.main-desc').classList.add('load_profile');
+            document.querySelector('.sub-desc').classList.add('load_profile');
+        }, 2500)
+    } else {
+        setTimeout(() => {
+            document.querySelector('.main-desc').classList.add('load_profile');
+            document.querySelector('.sub-desc').classList.add('load_profile');
+        }, 500)
+        setTimeout(() => {
+            document.querySelector('.profile-pic').classList.add('load_profile');
+        },0)
+    }
+    
 })
 
 var navbarScroll = new SmoothScroll('.navbar a[href*="#"]', {
@@ -72,6 +93,8 @@ window.addEventListener('resize', function() {
     if (this.window.innerWidth > 949) {
         button.classList.remove('fadein');
         button.classList.remove('fadeout');
+        dropdown.classList.remove('on');
+        dropdown.classList.add('off');
     }
 })
 
@@ -85,5 +108,9 @@ function hideDropdown() {
 }
 
 document.addEventListener('scroll', hideDropdown);
+
+//Actual Sections
+var spacerDiv = document.querySelector('.spacer');
+spacerDiv.style.height = navbar.offsetHeight + 'px';
 
 

@@ -61,6 +61,7 @@ body {
     font-family: "Montserrat";
     margin: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 .navbar {
@@ -68,13 +69,14 @@ body {
 }
 
 .navbar-item {
-    margin: auto 1rem;
+    margin: auto 0rem auto 1rem;
     padding: 0.5rem 2rem;
     font-size: 1.05rem;
 }
 
 .name {
     margin: 1rem;
+    margin-left: 0;
 }
 
 
@@ -146,6 +148,10 @@ body {
 
 .load_animation {
     animation: visibility 1.5s forwards;
+}
+
+.load_profile {
+    animation: visibility 3s forwards;
 }
 
 @media (max-width: 949px) {

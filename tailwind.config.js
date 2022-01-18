@@ -25,10 +25,14 @@ module.exports = {
         'main-purple': '#9955FF'
       },
       height: {
-        'icon': '3vw'
+        'icon': '35px'
       },
       minHeight: {
-        'icon': '36px',
+        'icon': '35px',
+        'profile':'446.906px'
+      },
+      minWidth: {
+        'profile':'335.188px'
       }
     },
   },

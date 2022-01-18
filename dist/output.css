@@ -456,20 +456,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .m-auto {
   margin: auto;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .m-12 {
   margin: 3rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
+.mt-auto {
+  margin-top: auto;
 }
 
 .mr-8 {
   margin-right: 2rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {
@@ -485,7 +505,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .h-icon {
-  height: 3vw;
+  height: 35px;
 }
 
 .h-10 {
@@ -497,7 +517,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .min-h-icon {
-  min-height: 36px;
+  min-height: 35px;
+}
+
+.min-h-profile {
+  min-height: 446.906px;
 }
 
 .w-8 {
@@ -512,8 +536,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
+.min-w-profile {
+  min-width: 335.188px;
+}
+
 .resize {
   resize: both;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .justify-between {
@@ -529,9 +565,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.bg-red-800 {
+.bg-slate-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
+  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -552,8 +588,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-to: #9955FF;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-medium {
@@ -563,6 +621,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-main-purple {
   --tw-text-opacity: 1;
   color: rgb(153 85 255 / var(--tw-text-opacity));
+}
+
+.text-main-blue {
+  --tw-text-opacity: 1;
+  color: rgb(42 127 255 / var(--tw-text-opacity));
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .opacity-0 {
@@ -635,6 +702,7 @@ body {
   font-family: "Montserrat";
   margin: 0;
   box-sizing: border-box;
+  height: 100vh;
 }
 
 .navbar {
@@ -642,13 +710,14 @@ body {
 }
 
 .navbar-item {
-  margin: auto 1rem;
+  margin: auto 0rem auto 1rem;
   padding: 0.5rem 2rem;
   font-size: 1.05rem;
 }
 
 .name {
   margin: 1rem;
+  margin-left: 0;
 }
 
 /* .menubutton.hovered {
@@ -751,6 +820,11 @@ body {
           animation: visibility 1.5s forwards;
 }
 
+.load_profile {
+  -webkit-animation: visibility 3s forwards;
+          animation: visibility 3s forwards;
+}
+
 @media (max-width: 949px) {
   .off {
     display: none;
@@ -831,13 +905,19 @@ body {
   .navbar\:basis-3\/5 {
     flex-basis: 60%;
   }
+
+  .navbar\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .navbar\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (max-width: 949px) {
-  .navbar_max\:m-4 {
-    margin: 1rem;
-  }
-
   .navbar_max\:m-8 {
     margin: 2rem;
   }
@@ -852,5 +932,11 @@ body {
 
   .navbar_max\:flex-wrap {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767px) {
+  .md_max\:hidden {
+    display: none;
   }
 }
