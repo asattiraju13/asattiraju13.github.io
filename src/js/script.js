@@ -54,7 +54,22 @@ var navbarScroll = new SmoothScroll('.navbar a[href*="#"]', {
 //     document.querySelector('.menubutton').classList.add('hovered')
 // })
 
-function toggleDropdown(event) {
+window.addEventListener('resize', function() {
+    console.log(button.classList)
+    if (this.window.innerWidth > 949) {
+        button.classList.remove('fadein');
+        button.classList.remove('fadeout');
+        dropdown.classList.remove('on');
+        dropdown.classList.add('off');
+
+        profile = document.querySelector('.profile-pic');
+        profile.classList.remove('load_profile');
+        profile.classList.remove('opacity-0');
+        profile.classList.add('opacity-1');
+    }
+})
+
+button.addEventListener('click', function (event) {
     dropdown.classList.toggle('off');
     dropdown.classList.toggle('on');
     if (dropdown.classList.contains('on')) {
@@ -88,32 +103,16 @@ function toggleDropdown(event) {
             }
         });
     }
-}
+});
 
-window.addEventListener('resize', function() {
-    if (this.window.innerWidth > 949) {
-        button.classList.remove('fadein');
-        button.classList.remove('fadeout');
-        dropdown.classList.remove('on');
-        dropdown.classList.add('off');
-
-        profile = document.querySelector('.profile-pic');
-        profile.classList.remove('load_profile');
-        profile.classList.remove('opacity-0');
-        profile.classList.add('opacity-1');
-    }
-})
-
-button.addEventListener('click',toggleDropdown);
-
-function hideDropdown() {
+document.addEventListener('scroll', function() {
     dropdown.classList.remove('on');
     dropdown.classList.add('off');
-    button.classList.remove('fadein');
-    button.classList.add('fadeout');
-}
-
-document.addEventListener('scroll', hideDropdown);
+    if (button.classList.contains('fadein')) {
+        button.classList.remove('fadein');
+        button.classList.add('fadeout');
+    }
+});
 
 //Actual Sections
 // var spacerDiv = document.querySelector('.spacer');
