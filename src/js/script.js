@@ -24,16 +24,17 @@ window.addEventListener('load', function() {
     if (this.window.innerWidth > 949) {
         setTimeout(() => {
             document.querySelector('.profile-pic').classList.add('load_profile');
-        },1000)
+        },750)
         setTimeout(() => {
             document.querySelector('.main-desc').classList.add('load_profile');
             document.querySelector('.sub-desc').classList.add('load_profile');
-        }, 2500)
+        }, 1750)
+        // setTime
     } else {
         setTimeout(() => {
             document.querySelector('.main-desc').classList.add('load_profile');
             document.querySelector('.sub-desc').classList.add('load_profile');
-        }, 500)
+        }, 250)
         setTimeout(() => {
             document.querySelector('.profile-pic').classList.add('load_profile');
         },0)
@@ -110,7 +111,8 @@ function hideDropdown() {
 document.addEventListener('scroll', hideDropdown);
 
 //Actual Sections
-var spacerDiv = document.querySelector('.spacer');
-spacerDiv.style.height = navbar.offsetHeight + 'px';
+// var spacerDiv = document.querySelector('.spacer');
+// spacerDiv.style.height = navbar.offsetHeight + 'px';
+document.querySelector('.top-section').style.paddingTop = navbar.offsetHeight + 'px';
 
 
