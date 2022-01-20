@@ -24,17 +24,17 @@ window.addEventListener('load', function() {
     if (this.window.innerWidth > 949) {
         setTimeout(() => {
             document.querySelector('.profile-pic').classList.add('load_profile');
-        },750)
+        },250)
         setTimeout(() => {
             document.querySelector('.main-desc').classList.add('load_profile');
-            document.querySelector('.sub-desc').classList.add('load_profile');
-        }, 1750)
+            document.querySelector('.sub-desc').classList.add('load_subdesc');
+        }, 750)
         // setTime
     } else {
         setTimeout(() => {
             document.querySelector('.main-desc').classList.add('load_profile');
-            document.querySelector('.sub-desc').classList.add('load_profile');
-        }, 250)
+            document.querySelector('.sub-desc').classList.add('load_subdesc');
+        }, 100)
         setTimeout(() => {
             document.querySelector('.profile-pic').classList.add('load_profile');
         },0)
@@ -96,7 +96,6 @@ window.addEventListener('resize', function() {
         button.classList.remove('fadeout');
         dropdown.classList.remove('on');
         dropdown.classList.add('off');
-        dropdown.classList.remove('load_animation');
 
         profile = document.querySelector('.profile-pic');
         profile.classList.remove('load_profile');
@@ -119,6 +118,6 @@ document.addEventListener('scroll', hideDropdown);
 //Actual Sections
 // var spacerDiv = document.querySelector('.spacer');
 // spacerDiv.style.height = navbar.offsetHeight + 'px';
-document.querySelector('.top-section').style.paddingTop = navbar.offsetHeight + 'px';
+document.querySelector('.top-section').style.paddingTop = navbar.offsetHeight + 10 + 'px';
 
 

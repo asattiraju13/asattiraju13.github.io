@@ -154,6 +154,11 @@ body {
     animation: visibility 3s forwards;
 }
 
+.load_subdesc {
+    animation: visibility 3s forwards;
+    animation-delay: 100ms;
+}
+
 @media (max-width: 949px) {
     .off {
         display: none;

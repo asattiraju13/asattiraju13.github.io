@@ -592,28 +592,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .pt-0 {
   padding-top: 0px;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
+.pt-20 {
+  padding-top: 5rem;
 }
 
-.pb-28 {
-  padding-bottom: 7rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
+.pt-40 {
+  padding-top: 10rem;
 }
 
 .text-center {
@@ -627,6 +619,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -837,6 +849,13 @@ body {
           animation: visibility 3s forwards;
 }
 
+.load_subdesc {
+  -webkit-animation: visibility 3s forwards;
+          animation: visibility 3s forwards;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
 @media (max-width: 949px) {
   .off {
     display: none;
@@ -935,6 +954,11 @@ body {
   .navbar\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .navbar\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
