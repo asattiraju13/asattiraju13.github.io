@@ -600,6 +600,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0px;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-center {
   text-align: center;
 }

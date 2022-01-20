@@ -96,6 +96,12 @@ window.addEventListener('resize', function() {
         button.classList.remove('fadeout');
         dropdown.classList.remove('on');
         dropdown.classList.add('off');
+        dropdown.classList.remove('load_animation');
+
+        profile = document.querySelector('.profile-pic');
+        profile.classList.remove('load_profile');
+        profile.classList.remove('opacity-0');
+        profile.classList.add('opacity-1');
     }
 })
 
