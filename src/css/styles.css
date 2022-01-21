@@ -147,7 +147,7 @@ body {
 
 .load_subdesc {
     animation: visibility 3s forwards;
-    animation-delay: 100ms;
+    animation-delay: 200ms;
 }
 
 @media (max-width: 949px) {
@@ -192,7 +192,7 @@ body {
 }
 
 .c-section {
-    background-color: #5f46995b;
+    background-color: #5f469985;
     height: 500px;
 }
 
