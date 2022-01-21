@@ -43,7 +43,7 @@ window.addEventListener('load', function() {
 })
 
 var navbarScroll = new SmoothScroll('.navbar a[href*="#"]', {
-    speed: 400
+    speed: 1000
 });
 
 // document.querySelector('.arrow-button').addEventListener('mouseout', function() {

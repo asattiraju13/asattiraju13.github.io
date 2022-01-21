@@ -10,8 +10,8 @@
   <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
 rel='stylesheet' type='text/css'>
 </head>
-<body class="bg-slate-600">
-  <nav class= "navbar fixed top-0 left-0 right-0 bg-black flex navbar_max:flex-wrap 
+<body class="bg-gray-800">
+  <nav class= "navbar fixed top-0 left-0 right-0 bg-gray-800 flex navbar_max:flex-wrap 
   text-center font-medium z-50">
 
     <div class="navbar-item navbar:basis-3/5 name">
@@ -28,22 +28,22 @@ rel='stylesheet' type='text/css'>
     <div class='inline-flex navbar_max:flex-col navbar_max:w-screen m-4 mr-0 ml-0 dropdown off relative'>
       <div class="navbar-item justify-between">
         <a href="#experience" tabindex="0" class="link">
-          <span class="text-main-purple hover:text-main-blue">Experience</span>
+          <span class="text-main-blue hover:text-main-purple">Experience</span>
         </a>
       </div>
       <div class="navbar-item justify-between">
         <a href="#projects" tabindex="0" class="link">
-          <span class="text-main-purple hover:text-main-blue">Projects</span>
+          <span class="text-main-blue hover:text-main-purple">Projects</span>
         </a>
       </div>
       <div class="navbar-item justify-between">
         <a href="#contact" tabindex="0" class="link">
-          <span class="text-main-purple hover:text-main-blue">Contact</span>
+          <span class="text-main-blue hover:text-main-purple">Contact</span>
         </a>
       </div>
       <div class="navbar-item justify-between">
         <a href="/src/pages/resume.pdf" target="_blank" tabindex="0" class="link resume">
-          <span class="text-main-purple hover:text-main-blue">Resume</span>
+          <span class="text-main-blue hover:text-main-purple">Resume</span>
         </a>
       </div>
     </div>
@@ -53,27 +53,39 @@ rel='stylesheet' type='text/css'>
     &nbsp;
   </div> -->
 
-  <section class='flex flex-row pb-20 bg-black top-section'>
+  <section class='flex flex-row pb-20 top-section'>
     <div class='profile-pic md_max:hidden m-4 ml-8 opacity-0'>
       <img src="/src/visuals/profile_pic.jpg" alt="profile" class='min-h-profile min-w-profile'>
     </div>
     <div class='flex-col'>
-      <div class='main-desc m-4 p-8 pt-0 mr-8 opacity-0'>
+      <div class='main-desc m-4 p-8 pb-0 pt-0 mr-8 opacity-0'>
         <span class='text-main-blue navbar:text-4xl text-2xl'>Hello! I'm Abhinav Sattiraju, a Computer Science student at the Georgia Institute of Technology.</span>
       </div>
-      <div class='sub-desc m-4 p-8 mr-8 opacity-0'>
-        <span class='text-main-purple navbar:text-xl text-base'>
-          I am originally from Jacksonville, Florida. My major concentrations are in Artificial Intelligence and Theoretical Computer Science.
-          I am passionate about data science, machine learning, and their real-world applications! 
+      <div class='sub-desc m-4 p-8 pt-4 mr-8 opacity-0'>
+        <span class='text-slate-500 navbar:text-xl text-base'>
+          I am originally from Jacksonville, Florida. My major concentrations are in <span class='text-main-purple'>Artificial Intelligence</span> and 
+          <span class='text-main-purple'>Theoretical Computer Science</span>.
+          I am passionate about <span class='text-main-purple'>data science</span>, <span class='text-main-purple'>machine learning</span>, and their real world applications&excl;
+          Outside of academics, I love playing the guitar and doing martial arts.
         </span>
       </div>
     </div>
   </section>
-  <section class='exp-section'>
+
+  <section id = 'experience' class='e-section'> 
     &nbsp;
   </section>
-  <footer class='footer text-center p-4'>
-    <span class=''>
+
+  <section id = 'projects' class='p-section bg-gray-800'> 
+    &nbsp;
+  </section>
+
+  <section id = 'contact' class='c-section'>
+    &nbsp;
+  </section>
+
+  <footer class='footer text-center p-4 bg-gray-800'>
+    <span class='text-slate-500'>
       Copyright &copy; 2022, Abhinav Sattiraju.
     </span>
   </footer>
