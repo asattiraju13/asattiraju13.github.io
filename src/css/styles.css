@@ -187,6 +187,16 @@ body {
     height: 500px;
 }
 
+.project-color {
+    color: #64748b;
+}
+
+.project-pic {
+    border-radius: 5%;
+    min-width: 247.859px;
+    max-height: 30vw;
+}
+
 .general-icon {
     color: #64748b;
 }

@@ -574,6 +574,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 2rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -638,30 +646,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-grow: 1;
 }
 
-.basis-2\/12 {
-  flex-basis: 16.666667%;
-}
-
-.basis-6\/12 {
-  flex-basis: 50%;
-}
-
-.basis-8\/12 {
-  flex-basis: 66.666667%;
-}
-
-.basis-4\/12 {
-  flex-basis: 33.333333%;
-}
-
-.basis-10\/12 {
-  flex-basis: 83.333333%;
-}
-
-.basis-12 {
-  flex-basis: 3rem;
-}
-
 .rotate-90 {
   --tw-rotate: 90deg;
   transform: var(--tw-transform);
@@ -702,6 +686,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .border {
@@ -1074,6 +1062,16 @@ body {
   height: 500px;
 }
 
+.project-color {
+  color: #64748b;
+}
+
+.project-pic {
+  border-radius: 5%;
+  min-width: 247.859px;
+  max-height: 30vw;
+}
+
 .general-icon {
   color: #64748b;
 }
@@ -1128,6 +1126,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:basis-7\/12 {
+    flex-basis: 58.333333%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1140,6 +1142,10 @@ body {
 
   .md\:mr-6 {
     margin-right: 1.5rem;
+  }
+
+  .md\:ml-2 {
+    margin-left: 0.5rem;
   }
 }
 
@@ -1166,10 +1172,6 @@ body {
 @media (max-width: 949px) {
   .navbar_max\:m-8 {
     margin: 2rem;
-  }
-
-  .navbar_max\:hidden {
-    display: none;
   }
 
   .navbar_max\:w-screen {
@@ -1209,6 +1211,10 @@ body {
     margin-right: 2.5rem;
   }
 
+  .md_max\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .md_max\:hidden {
     display: none;
   }
@@ -1220,6 +1226,18 @@ body {
 }
 
 @media (max-width: 639px) {
+  .sm_max\:mr-10 {
+    margin-right: 2.5rem;
+  }
+
+  .sm_max\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .sm_max\:hidden {
+    display: none;
+  }
+
   .sm_max\:flex-col {
     flex-direction: column;
   }
