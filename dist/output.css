@@ -554,6 +554,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 3rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -584,6 +592,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .block {
@@ -762,6 +786,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
@@ -1213,6 +1241,22 @@ body {
 
   .md_max\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .md_max\:mr-8 {
+    margin-right: 2rem;
+  }
+
+  .md_max\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .md_max\:mr-4 {
+    margin-right: 1rem;
+  }
+
+  .md_max\:mr-40 {
+    margin-right: 10rem;
   }
 
   .md_max\:hidden {
