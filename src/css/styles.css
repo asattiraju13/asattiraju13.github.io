@@ -191,9 +191,12 @@ body {
     height: 500px;
 }
 
+.general-icon {
+    color: #64748b;
+}
+
 .c-section {
     background-color: #5f469985;
-    height: 500px;
 }
 
 ::-webkit-scrollbar {

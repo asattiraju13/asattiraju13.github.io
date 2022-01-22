@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/src/css/styles.css">
   <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
 rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/src/fontawesome/css/all.css">
 </head>
 <body class="bg-gray-800">
   <nav class= "navbar fixed top-0 left-0 right-0 bg-gray-800 flex navbar_max:flex-wrap 
@@ -83,30 +84,38 @@ rel='stylesheet' type='text/css'>
     <div class='md:ml-6 pt-8 md_max:ml-10'>
       <span class='text-5xl navbar_max:text-4xl text-slate-500'>Projects</span>
     </div>
-    &nbsp;
   </section>
 
   <section id = 'contact' class='c-section'>
     <div class='md:ml-6 pt-8 md_max:ml-10'>
       <span class='text-5xl navbar_max:text-4xl text-main-purple'>Contacts</span>
     </div>
-    <div class='flex sm:flex-row flex-col justify-evenly'>
-      <div class="general-icon flex-col m-8 ">
+    <div class='md:ml-6 md_max:ml-10 pt-2 mr-8'>
+      <span class='text-xl navbar_max:text-base text-main-purple'>Feel free to send an email, connect on LinkedIn, or follow on GitHub!</span>
+    </div>
+    <div class='flex sm:flex-row sm_max:flex-col justify-evenly'>
+
+      <div class="general-icon flex flex-col m-8">
+        <i class='fas fa-envelope fa-5x pb-4 m-auto'></i>
         <div class='text-center'>
-          Email
+          <a class='text-slate-500 text-xl hover:text-gray-800' href='mailto:asattiraju3@gatech.edu' target='_blank'>Email</a>
         </div>
       </div>
-      <div class="general-icon flex-col m-8 ">
+
+      <div class="general-icon flex flex-col m-8">
+        <i class='fab fa-linkedin-in fa-5x pb-4 m-auto'></i>
         <div class='text-center'>
-          LinkedIn
+          <a class='text-slate-500 text-xl hover:text-gray-800' href='https://www.linkedin.com/in/abhinavsattiraju/' target='_blank'>LinkedIn</a>
         </div>
       </div>
-      <div class="general-icon flex-col m-8">
+
+      <div class="general-icon flex flex-col m-8">
+        <i class='fab fa-github fa-5x pb-4 m-auto'></i>
         <div class='text-center'>
-          GitHub
+          <a class='text-slate-500 text-xl hover:text-gray-800' href='https://github.com/asattiraju13' target='_blank'>GitHub</a>
         </div>
-        <i class="fa fa-github"></i>
       </div>
+
     </div>
   </section>
 
@@ -121,6 +130,7 @@ rel='stylesheet' type='text/css'>
     </svg>
   </button> -->
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="/src/fontawesome/js/all.js"></script>
   <script src="/src/js/script.js"></script>
 </body>
 </html>
