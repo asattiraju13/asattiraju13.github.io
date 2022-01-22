@@ -554,10 +554,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: 3rem;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mt-auto {
   margin-top: auto;
 }
@@ -576,6 +572,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-8 {
   margin-left: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .block {
@@ -638,6 +638,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-grow: 1;
 }
 
+.basis-2\/12 {
+  flex-basis: 16.666667%;
+}
+
+.basis-6\/12 {
+  flex-basis: 50%;
+}
+
+.basis-8\/12 {
+  flex-basis: 66.666667%;
+}
+
+.basis-4\/12 {
+  flex-basis: 33.333333%;
+}
+
+.basis-10\/12 {
+  flex-basis: 83.333333%;
+}
+
+.basis-12 {
+  flex-basis: 3rem;
+}
+
 .rotate-90 {
   --tw-rotate: 90deg;
   transform: var(--tw-transform);
@@ -662,6 +686,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col {
   flex-direction: column;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-between {
@@ -763,6 +795,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -770,10 +807,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-medium {
   font-weight: 500;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .italic {
@@ -1041,10 +1074,6 @@ body {
   height: 500px;
 }
 
-.p-section {
-  height: 500px;
-}
-
 .general-icon {
   color: #64748b;
 }
@@ -1088,9 +1117,9 @@ body {
   color: rgb(153 85 255 / var(--tw-text-opacity));
 }
 
-.hover\:text-red-500:hover {
+.hover\:text-main-blue:hover {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(42 127 255 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-800:hover {
@@ -1107,6 +1136,10 @@ body {
 @media (min-width: 768px) {
   .md\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .md\:mr-6 {
+    margin-right: 1.5rem;
   }
 }
 
@@ -1135,6 +1168,10 @@ body {
     margin: 2rem;
   }
 
+  .navbar_max\:hidden {
+    display: none;
+  }
+
   .navbar_max\:w-screen {
     width: 100vw;
   }
@@ -1152,6 +1189,11 @@ body {
     line-height: 2.5rem;
   }
 
+  .navbar_max\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .navbar_max\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1161,6 +1203,10 @@ body {
 @media (max-width: 767px) {
   .md_max\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .md_max\:mr-10 {
+    margin-right: 2.5rem;
   }
 
   .md_max\:hidden {
