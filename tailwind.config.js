@@ -22,7 +22,9 @@ module.exports = {
       },
       colors: {
         'main-blue': '#2A7FFF',
-        'main-purple': '#9955FF'
+        'main-purple': '#9955FF',
+        'muted-purple':'#5f469985',
+        'muted-blue':'#2A7FFF5b'
       },
       height: {
         'icon': '35px'

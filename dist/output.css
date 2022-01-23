@@ -578,8 +578,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.ml-7 {
+  margin-left: 1.75rem;
 }
 
 .mt-8 {
@@ -592,10 +592,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-7 {
-  margin-left: 1.75rem;
 }
 
 .block {
@@ -684,10 +680,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
-.justify-start {
-  justify-content: flex-start;
-}
-
 .justify-between {
   justify-content: space-between;
 }
@@ -748,6 +740,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 5rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -758,22 +758,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
-}
-
-.pt-0 {
-  padding-top: 0px;
-}
-
-.pr-8 {
-  padding-right: 2rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
 }
 
 .text-center {
@@ -1122,6 +1106,20 @@ body {
           animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+.hover\:bg-muted-purple:hover {
+  background-color: #5f469985;
+}
+
+.hover\:text-3xl:hover {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.hover\:text-xs:hover {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .hover\:text-main-purple:hover {
   --tw-text-opacity: 1;
   color: rgb(153 85 255 / var(--tw-text-opacity));
@@ -1130,6 +1128,49 @@ body {
 .hover\:text-gray-800:hover {
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.hover\:text-muted-purple:hover {
+  color: #5f469985;
+}
+
+.hover\:text-muted-blue:hover {
+  color: #2A7FFF5b;
+}
+
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.hover\:decoration-muted-purple:hover {
+  -webkit-text-decoration-color: #5f469985;
+          text-decoration-color: #5f469985;
+}
+
+.hover\:decoration-muted-blue:hover {
+  -webkit-text-decoration-color: #2A7FFF5b;
+          text-decoration-color: #2A7FFF5b;
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
+.hover\:opacity-10:hover {
+  opacity: 0.1;
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
+.hover\:opacity-60:hover {
+  opacity: 0.6;
 }
 
 @media (min-width: 640px) {
