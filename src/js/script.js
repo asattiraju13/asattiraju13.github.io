@@ -29,7 +29,6 @@ window.addEventListener('load', function() {
             document.querySelector('.main-desc').classList.add('load_profile');
             document.querySelector('.sub-desc').classList.add('load_subdesc');
         }, 750)
-        // setTime
     } else {
         setTimeout(() => {
             document.querySelector('.main-desc').classList.add('load_profile');
@@ -118,5 +117,35 @@ document.addEventListener('scroll', function() {
 // var spacerDiv = document.querySelector('.spacer');
 // spacerDiv.style.height = navbar.offsetHeight + 'px';
 document.querySelector('.top-section').style.paddingTop = navbar.offsetHeight + 10 + 'px';
+
+
+//Sliding, Fading down-up
+const horizontalSliders = document.querySelectorAll('.slide-right');
+const verticalSliders = document.querySelectorAll('.slide-up');
+
+const options = {
+    threshold: 0,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            console.log(entry.target.classList);
+            entry.target.classList.add('slide-in');
+            observer.unobserve(entry.target);
+        }
+    })
+}, options);
+
+horizontalSliders.forEach(slider => {
+    observer.observe(slider);
+});
+
+verticalSliders.forEach(slider => {
+    observer.observe(slider);
+})
 
 

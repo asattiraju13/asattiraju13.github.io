@@ -53,14 +53,15 @@ table {
 
 /* My own styling */
 
-html {
-}
+/* html {
+} */
 
 body {
     font-family: "Montserrat";
     margin: 0;
     box-sizing: border-box;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -200,8 +201,34 @@ body {
     background-color: #5f469985;
 }
 
+.slide-right {
+    transform: translateX(-100%);
+}
+
+.slide-right {
+    transition: transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+}
+
+.slide-right.slide-in {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 ::-webkit-scrollbar {
     width: 0.6em;
+}
+
+.slide-up {
+    opacity: 0;
+}
+
+.slide-up {
+    transition: opacity 1.25s ease-in;
+}
+
+.slide-up.slide-in {
+    opacity: 1;
 }
 
 ::-webkit-scrollbar {
