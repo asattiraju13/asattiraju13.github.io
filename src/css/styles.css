@@ -80,6 +80,28 @@ body {
     margin-left: 0;
 }
 
+.link span {
+     position: relative;
+     text-decoration: none;
+     padding-bottom: 4px;
+}
+
+.link span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #9955ff;
+    transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.link span:hover::after {
+    left: 0;
+    width: 100%;
+}
+
 /* .menubutton.hovered {
     animation: shadow-transition-out 0.2s;
 }
