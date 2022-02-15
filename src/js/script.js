@@ -45,14 +45,6 @@ var navbarScroll = new SmoothScroll('.navbar a[href*="#"]', {
     speed: 1000
 });
 
-// document.querySelector('.arrow-button').addEventListener('mouseout', function() {
-//     document.querySelector('.arrow-button').classList.add('hovered')
-// })
-
-// document.querySelector('.menubutton').addEventListener('mouseout', function() {
-//     document.querySelector('.menubutton').classList.add('hovered')
-// })
-
 window.addEventListener('resize', function() {
     console.log(button.classList)
     if (this.window.innerWidth > 949) {
@@ -114,10 +106,7 @@ document.addEventListener('scroll', function() {
 });
 
 //Actual Sections
-// var spacerDiv = document.querySelector('.spacer');
-// spacerDiv.style.height = navbar.offsetHeight + 'px';
 document.querySelector('.top-section').style.paddingTop = navbar.offsetHeight + 10 + 'px';
-
 
 //Sliding, Fading down-up
 const horizontalSliders = document.querySelectorAll('.slide-right');

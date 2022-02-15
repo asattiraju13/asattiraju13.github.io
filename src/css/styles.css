@@ -53,9 +53,6 @@ table {
 
 /* My own styling */
 
-/* html {
-} */
-
 body {
     font-family: "Montserrat";
     margin: 0;
@@ -102,39 +99,6 @@ body {
     left: 0;
     width: 100%;
 }
-
-/* .menubutton.hovered {
-    animation: shadow-transition-out 0.2s;
-}
-
-.menubutton:hover {
-    animation: shadow-transition-in 0.2s forwards;
-} */
-/* 
-.arrow-button.hovered {
-    animation: shadow-transition-out 0.2s;
-}
-.arrow-button:hover {
-    animation: shadow-transition-in 0.2s forwards;
-} */
-/* 
-@keyframes shadow-transition-out {
-    from {
-        box-shadow: 0px 0px 5px 2px white;
-    }
-    to {
-        box-shadow: 0px 0px 0px 0px white;
-    }
-}
-
-@keyframes shadow-transition-in {
-    from {
-        box-shadow: 0px 0px 0px 0px white;
-    }
-    to {
-        box-shadow: 0px 0px 5px 2px white;
-    }
-} */
 
 .fadein > .xicon {
     animation: visibility 0.75s forwards;
