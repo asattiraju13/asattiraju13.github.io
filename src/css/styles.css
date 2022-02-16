@@ -176,11 +176,15 @@ body {
 
 
 .general-icon {
+    color: #94a3b8;
+}
+
+.general-icon:hover {
     color: #64748b;
 }
 
 .c-section {
-    background-color: #5f469985;
+    background-color: #7557bb85;
 }
 
 .slide-right {
