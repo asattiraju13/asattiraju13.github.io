@@ -1,0 +1,222 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Abhinav Sattiraju}} & Email: \href{mailto:asattiraju3@gatech.edu}{asattiraju3@gatech.edu}\\
+  \href{https://asattiraju13.github.io}{Website: asattiraju13.github.io} & Mobile:~~~507-513-2874 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, Georgia}
+      {B.S. Computer Science;  GPA: 4.00}{Aug 2021 - May 2024}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Computer Organization \& Programming, Computing \& Society, Data Structures, Algorithms, Object-Oriented Programming}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-10pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+\resumeSubItem{Languages}{~~~~~~~~~~~~~~~Python, Java, HTML, CSS, JavaScript, SQL}
+    \resumeSubItem{Data Science}{~~~~~~~~~~~NumPy, Pandas, Matplotlib, Scikit-learn, Tensorflow, Keras}
+    \resumeSubItem{Web Development}{~~~React, Bootstrap, Tailwind CSS, Flask, SQLAlchemy}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+%   \resumeSubheading{Blue Cross and Blue Shield of Florida}{Jacksonville, Florida}
+%     {Data Science Intern}{Jan 2022 - Present}
+%     \resumeItemListStart
+%         \item
+%           {}
+%           \vspace{-3}
+%           \item {}
+%           \vspace{-3}
+%           \item {}
+%           \vspace{-3}
+%           \item {}
+%           \vspace{-3}
+%       \resumeItemListEnd
+% \vspace{-3pt}
+  \resumeSubheading{Center for Translational Research in Neuroimaging \& Data Science}{Atlanta, Georgia}
+    {Undergraduate Student Researcher}{Jan 2022 - Present}
+    \resumeItemListStart
+        \item
+          {Developing a Convolutional Neural Network in TensorFlow and Keras on EEG time series data to detect Schizophrenia}
+         \vspace{3}
+      \resumeItemListEnd
+\vspace{-3pt}
+    \resumeSubheading
+		{Big Data Big Impact @ Georgia Tech}{Atlanta, Georgia}
+		{Web Developer, Data Scientist and Analyst}{Sep 2021 - Present}
+		\resumeItemListStart
+        \item
+          {Working with a team to develop the website for the organization}
+          \vspace{-3}
+          \item
+          {Predicting California wildfire susceptibility with ensemble machine learning models in Scikit-learn}
+          \vspace{-3}
+          \item {Worked with a team to identify local non-governmental organizations and non-profits to partner with for data science and machine learning projects}
+          \vspace{3}
+		\resumeItemListEnd
+\vspace{-3pt}
+    \resumeSubheading{Agile Locomotion and Manipulation Vertically Integrated Project}{Atlanta, Georgia}
+    {Undergraduate Student Researcher}{Aug 2021 - Present}
+    \resumeItemListStart
+        \item
+          {Researching path planning for cable manipulation by a robot gripper with a Gelsight sensor}
+          \vspace{-3}
+          \item
+          {Implemented a 3D A* solution in Python for multi-goal routing with clamping points for cable length constraints}
+          \vspace{-3}
+          \item {Adapted Bezier curves for smooth approximations to the routed A* paths, visualized with Matplotlib and Plotly}
+          \vspace{-3}
+          \item {Engineered a 3D test-case for a NASA International Space Station Model using Blender}
+          \vspace{3}
+      \resumeItemListEnd
+\vspace{-3}
+    \resumeSubheading{Mathnasium}{Fruit Cove, Florida}
+    {Instructor}{Jul 2019 – Jun 2021}
+    \resumeItemListStart
+        \item
+          {Instructed over 100 students from K through 12 grade levels in subjects from elementary math to pre-calculus with a team of 10 instructors}
+          \vspace{-3}
+          \item
+          {Piloted transitions to Zoom instruction during the COVID-19 pandemic by leading online tag-team sessions for 4 instructors}
+          \vspace{-3}
+          \item {Conducted the first online sessions among the instructors at the Center using Mathnasium’s ConexEd platform in 2021 and taught 2 instructors the new online platform}
+          \vspace{-3}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\normalsize \textbf{2nd Place COVID-19 Data Hackathon: Bioinformatics scRNA Target Challenge}\\
+Worked with a team to train Random Forests and Support Vector Machines in \textbf{Scikit-learn} and Neural Networks in \textbf{Keras} on a scRNA-seq dataset to classify COVID-19 infection severity, achieving 95\% maximal accuracy. Identified 4 genes as molecular markers of COVID-19 using permutation feature importance.\\
+\vspace{5pt}
+\normalsize \textbf{Vehicle Coupon Classification Model}\\
+Used \textbf{Pandas}, \textbf{Matplotlib}, and \textbf{Seaborn} to perform exploratory visualizations on a UCI ML Vehicle Coupon dataset. Trained the \textbf{XGBoost} method with feature selection, hyperparameter tuning, and cross-validation in \textbf{Scikit-learn}, with a maximal F1-score of 0.81 for coupon acceptances.\\
+\vspace{5pt}
+\normalsize \textbf{Car-Obstacle Game with NEAT AI}\\
+Designed a game with \textbf{Python} and \textbf{Pygame} with the aim of navigating a car through a series of obstacles. Built a robust AI using the NeuroEvolution of Augmenting Topologies (\textbf{NEAT}) genetic algorithm that successfully passes all 15 of the varying patterns of obstacles.\\
+\vspace{5pt}
+\normalsize \textbf{NBA Draft Scraper and Visualizations}\\
+Scraped top rookies’ stats from the past 20 NBA drafts from Basketball Reference using \textbf{Beautiful Soup}. Processed data with feature engineering and investigated several analysis questions using \textbf{Matplotlib}, \textbf{Seaborn}, and \textbf{Plotly} visualizations along with Linear Discriminant Analysis from \textbf{Scikit-learn}.\\
+\vspace{5pt}
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Certifications}
+\begin{description}[font=$\bullet$]
+\item {2021 Python for Machine Learning \& Data Science Masterclass – Udemy}
+\vspace{-5pt}
+\item {HTML, CSS, and Javascript for Web Developers – Coursera, Johns Hopkins University}
+\vspace{-5pt}
+\item {Python for Data Science and Machine Learning Bootcamp – Udemy}
+
+\end{description}
+
+% \vspace{-5pt}
+% \section{Leadership and Activities}
+%   \resumeSubHeadingListStart
+% 	\resumeSubheading
+%     {Government Relations Committee, Student Government Association}{Atlanta, Georgia}
+%     {In progress}{Dec 2021 - Present}
+% \vspace{5pt}
+%     % \vspace{10pt}\textbf{\large{Community Experience}}
+%     \resumeSubheading
+%     {Freshman Student Government Association}{Atlanta, Georgia}
+%     {Planned the largest student-run event on campus: The Final Stand sporting event.}{Sep 2021 - Present}
+% \vspace{5pt}
+%     \resumeSubheading
+%     {Medium}{Remote}
+%     {Data Science Writer}{Dec 2021 - Present}
+% \vspace{5pt}
+%     \resumeSubheading
+%     {Kaggle}{Remote}
+%     {Competitor, Notebooks}{Dec 2021 - Present}
+% \vspace{5pt}
+
+% \resumeSubHeadingListEnd
+
+\end{document}
