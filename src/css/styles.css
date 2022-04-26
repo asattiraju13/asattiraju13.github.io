@@ -170,7 +170,7 @@ body {
     border-radius: 5%;
 }
 
-.e-section {
+.e-section, .a-section {
     background-color: #2A7FFF5b;
 }
 
@@ -184,7 +184,7 @@ body {
 }
 
 .c-section {
-    background-color: #7557bb85;
+    background-color: #7a58ca85;
 }
 
 .slide-right {
