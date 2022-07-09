@@ -136,5 +136,3 @@ horizontalSliders.forEach(slider => {
 verticalSliders.forEach(slider => {
     observer.observe(slider);
 })
-
-
