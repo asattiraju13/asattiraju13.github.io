@@ -21,7 +21,7 @@ var x_icon = document.querySelector('.xicon');
 
 window.addEventListener('load', function() {
     dropdown.classList.add('load_animation');
-    if (this.window.innerWidth > 949) {
+    if (this.window.innerWidth > 959) {
         setTimeout(() => {
             document.querySelector('.profile-pic').classList.add('load_profile');
         },250)
@@ -46,8 +46,7 @@ var navbarScroll = new SmoothScroll('.navbar a[href*="#"]', {
 });
 
 window.addEventListener('resize', function() {
-    console.log(button.classList)
-    if (this.window.innerWidth > 949) {
+    if (this.window.innerWidth > 959) {
         button.classList.remove('fadein');
         button.classList.remove('fadeout');
         dropdown.classList.remove('on');
@@ -122,7 +121,6 @@ const observer = new IntersectionObserver(function(entries, observer) {
         if (!entry.isIntersecting) {
             return;
         } else {
-            console.log(entry.target.classList);
             entry.target.classList.add('slide-in');
             observer.unobserve(entry.target);
         }

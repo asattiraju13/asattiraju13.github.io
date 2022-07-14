@@ -138,7 +138,7 @@ body {
     animation-delay: 200ms;
 }
 
-@media (max-width: 949px) {
+@media (max-width: 959px) {
     .off {
         display: none;
     }
